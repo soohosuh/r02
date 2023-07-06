@@ -2,12 +2,14 @@ import SampleNav from "./nav/SampleNav";
 
 const BasicLayout = ({children}) => {
     return ( 
-        <div className="container mx-auto min-w-[1280px] bg-blue-500">
+        <div className="container mx-auto bg-gray-700 h-[100vh]">
             <div>
                 <SampleNav></SampleNav>
             </div>
             <div>
-                {children}
+                <img src={require('../image/spzl1.jpg')} width={300}/>
+                <img src={require('../image/spzl2.jpg')} width={300}/>
+                <img src={require('../image/spzl3.jpg')} width={300}/>
             </div>
         </div>
     );

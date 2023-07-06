@@ -4,7 +4,8 @@ import BasicLayout from "../layouts/BasicLayout";
 const MainPage = () => {
     return ( 
         <BasicLayout>
-            <h2>Main Page</h2>
+            <div>
+            </div>
         </BasicLayout>
      );
 }
