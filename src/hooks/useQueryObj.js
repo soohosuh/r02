@@ -44,7 +44,7 @@ const useQueryObj = () => {
 
   }
 
-  return [queryObj, setSearch, moveRead, moveList]
+  return {queryObj, setSearch, moveRead, moveList}
 }
 
 export default useQueryObj

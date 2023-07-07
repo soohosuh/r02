@@ -4,7 +4,7 @@ import useQueryObj from "../../hooks/useQueryObj";
 
 const ListPage = () => {
 
-  const [queryObj, setSearch, moveRead, moveList] = useQueryObj()
+  const {queryObj, setSearch, moveRead} = useQueryObj()
 
   console.log("queryObj --------")
   console.log(queryObj)
