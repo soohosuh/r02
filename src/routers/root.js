@@ -10,6 +10,7 @@ import LoadingPage from "../pages/LoadingPage";
 const Loading = <LoadingPage></LoadingPage>
 const Board_Index = lazy(() => import("../pages/board/IndexPage"))
 const Board_List = lazy(() => import("../pages/board/ListPage"))
+const Board_Read = lazy(() => import("../pages/board/ReadPage"))
 
 //라우터 설정
 //https://reactrouter.com/en/main/start/tutorial 참조
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
           {
             path: "list",
             element: <Suspense fallback={Loading}><Board_List/></Suspense>
+          },
+          {
+            path: "read/:bno",
+            element: <Suspense fallback={Loading}><Board_Read/></Suspense>
           }
         ]
     }
