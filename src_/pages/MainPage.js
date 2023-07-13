@@ -2,11 +2,12 @@ import BasicLayout from "../layouts/BasicLayout";
 
 
 const MainPage = () => {
-  return ( 
-    <BasicLayout>
-      <h2>Main Page</h2>
-    </BasicLayout>
-   );
+    return ( 
+        <BasicLayout>
+            <div>
+            </div>
+        </BasicLayout>
+     );
 }
  
 export default MainPage;

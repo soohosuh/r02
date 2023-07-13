@@ -1,46 +1,23 @@
-import { useEffect, useState } from "react";
-import { getOne } from "../../../api/boardAPI";
-
+import { useState } from "react";
 
 const initState = {
-    bno:0,
-    title:'',
-    content:'',
-    writer:'',
-    regDate:'',
-    modDate:''
+  bno:0,
+  title:'',
+  content:'',
+  writer:'',
+  regDate:'',
+  modDate:''
 }
-const ReadComponent = ({bno}) => {
 
-    const [board, setBoard] = useState(initState)
+const ReadComponent = ( {bno}) => {
 
-    useEffect(() => {
-        getOne(bno).then(data => {
-            setBoard(data)
-        })
-    },[bno])
+  const [board, setBoard] = useState(initState)
 
-    return ( 
-        <div>
-            <div>
-                {board.bno}
-            </div>
-            <div>
-                {board.title}
-            </div>
-            <div>
-                {board.content}
-            </div>
-            <div>
-                {board.writer}
-            </div>
-            <div>
-                {board.regDate}
-            </div>
-            
-        </div>
-     );
+  return (
+    <div>
+      Board Read Component {bno}
+    </div>
+   );
 }
  
-
 export default ReadComponent;

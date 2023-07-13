@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
 import useQueryObj from "../../hooks/useQueryObj";
-import ReplyWrapper from "../../components/reply/ReplyWrapper";
+import ReadComponent from "../../components/board/read/ReadComponent";
 
 
 const ReadPage = () => {
 
-  const [queryObj, setSearch,moveRead, moveList] = useQueryObj()
+  const {queryObj, moveList} = useQueryObj()
   const {bno} = useParams()
 
   console.log(bno)
@@ -15,8 +15,7 @@ const ReadPage = () => {
     <div>
       Board Read Page
 
-      <ReplyWrapper bno={bno}></ReplyWrapper>
-
+      <ReadComponent bno={bno}></ReadComponent>
       <button onClick={e => moveList()}>List</button>
     </div>
   );
