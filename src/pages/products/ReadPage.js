@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import useQueryObj from "../../hooks/useQueryObj";
 import ReadComponent from "../../components/products/Readcomponent";
+import useCustomLogin from "../../hooks/useCustomLogin";
 
 
 
@@ -8,6 +9,10 @@ const ReadPage = () => {
 
   const {queryObj, setSearch, moveRead, moveList, moveModify} = useQueryObj()
   const {pno} = useParams()
+
+  useCustomLogin(() => {
+    alert("로그인 해주세요")
+  })
 
   console.log(pno)
   console.log(queryObj)
