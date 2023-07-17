@@ -4,12 +4,13 @@ import BasicLayout from "../layouts/BasicLayout";
 
 const MainPage = () => {
   return ( 
-    <BasicLayout>
-      <h2>Main Page</h2>
-
-      <TodoList></TodoList>
-      
-    </BasicLayout>
+    <div>
+      <BasicLayout><h2>Main Page</h2>   
+      </BasicLayout>
+      <div>
+        <TodoList></TodoList>
+      </div>
+    </div>
     
    );
 }
