@@ -18,13 +18,14 @@ const LoginNav = () => {
             <div>
                 {email} - {nickName}
             </div>
-            <CartNav></CartNav>
             <button
                 onClick={() => {
                     dispatch(logout())
                     navigate("/")
                 }}
             >logout</button>
+            <CartNav></CartNav>
+            
         </div>
         )
     }
