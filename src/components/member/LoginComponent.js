@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { postLoginThunk, requestLogin } from "../../reducers/loginSlice";
 
 const initState = {
-    email: 'soohosuh3@gmail.com',
+    email: 'user00@aaa.com',
     pw: '1111'
 }
 

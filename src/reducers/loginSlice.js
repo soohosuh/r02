@@ -64,10 +64,12 @@ const loginSlice = createSlice({
                 return
             }
 
-            state.loading = false
-            state.email = email
-            state.nickName = nickName
-            state.admin = admin
+            // state.loading = false
+            // state.email = email
+            // state.nickName = nickName
+            // state.admin = admin
+
+            state = action.payload
 
             setCookie("login", JSON.stringify(action.payload), 1)
         })
